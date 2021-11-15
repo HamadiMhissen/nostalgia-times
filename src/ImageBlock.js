@@ -1,12 +1,13 @@
+import React from "react";
+import { images } from "./Utility/images.js";
 import ImagePieceOfBlock from "./imagePieceOfBlock";
 
-function ImageBlock(props) {
-  const value = parseInt(props.value);
-  const name = props.name;
-  return [...Array(value)].map((e, index) => (
-    <p key={index}>
-      <ImagePieceOfBlock value={parseInt(index + 1)} name={name} />
-    </p>
+function ImageBlock() {
+  const imagesToRender = images.map((e, index) => (
+    <div key={index}>
+      <ImagePieceOfBlock element={e} />
+    </div>
   ));
+  return <div>{imagesToRender}</div>;
 }
 export default ImageBlock;
