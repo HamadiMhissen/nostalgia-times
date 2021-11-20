@@ -1,6 +1,6 @@
 import React from "react";
 import { images } from "./Utility/images.js";
-import ImagePieceOfBlock from "./imagePieceOfBlock";
+import ImagePieceOfBlock from "./ImagePieceOfBlock";
 
 function ImageBlock() {
   const imagesToRender = images.map((e, index) => (

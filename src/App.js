@@ -5,7 +5,7 @@ import ImageBlock from "./ImageBlock";
 function App() {
   return (
     <div>
-      <h4>Nostalgia Times</h4>
+      <h2>Nostalgia Times</h2>
       <ImageBlock />
     </div>
   );
